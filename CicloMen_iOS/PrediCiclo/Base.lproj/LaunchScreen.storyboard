@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="Ze5-6b-2t3" colorLabel="IBBuiltInLabel-Red">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Gradient_Splash" translatesAutoresizingMaskIntoConstraints="NO" id="8gC-qv-uhh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.93355387449264526" green="0.52086663246154785" blue="0.49038559198379517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_con_nombre_blanco" translatesAutoresizingMaskIntoConstraints="NO" id="SKP-1b-ULh">
+                                <rect key="frame" x="112" y="358" width="190" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="6wv-17-cNd"/>
+                                    <constraint firstAttribute="width" constant="190" id="O0Q-xf-xXd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                        <constraints>
+                            <constraint firstItem="8gC-qv-uhh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3C9-8Z-ybM"/>
+                            <constraint firstItem="SKP-1b-ULh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="73F-Wd-5yX"/>
+                            <constraint firstItem="8gC-qv-uhh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="EGW-qZ-vJ9"/>
+                            <constraint firstItem="8gC-qv-uhh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GBU-w1-q6F"/>
+                            <constraint firstAttribute="bottom" secondItem="8gC-qv-uhh" secondAttribute="bottom" id="JHS-lX-11s"/>
+                            <constraint firstItem="SKP-1b-ULh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="QyR-Th-YWz"/>
+                            <constraint firstItem="8gC-qv-uhh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pgo-WX-fzX"/>
+                            <constraint firstItem="8gC-qv-uhh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xZT-ef-qth"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gradient_Splash" width="1125" height="2436"/>
+        <image name="ic_logo_con_nombre_blanco" width="1312" height="1178"/>
+    </resources>
+</document>

@@ -1,0 +1,9 @@
+
+[
+    { "id": 0, "image": "delete" , "label": "Limpiar Calendario" },
+    { "id": 1, "image": "shopping-basket" , "label": "Comprar Varillas" },
+    { "id": 2, "image": "delete" , "label": "Términos y condiciones" },
+    { "id": 3, "image": "delete" , "label": "Política de privacidad" },
+    { "id": 4, "image": "delete" , "label": "Ayuda" },
+    { "id": 5, "image": "delete" , "label": "Cerrar Sesión" }
+]

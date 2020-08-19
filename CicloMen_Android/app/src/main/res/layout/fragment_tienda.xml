@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context=".ui.tienda.TiendaFragment">
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="visible"
+      android:orientation="vertical">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/content_producto"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:visibility="visible"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+          <ImageView
+              android:id="@+id/img_product"
+              android:layout_width="match_parent"
+              android:layout_height="250dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/woman"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <TextView
+              android:id="@+id/tv_product_name"
+              android:layout_width="220dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="30dp"
+              android:layout_marginTop="10dp"
+              android:fontFamily="@font/roboto_bold"
+              android:text="Product name"
+              android:textColor="@android:color/black"
+              android:textSize="22sp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/img_product" />
+
+
+          <TextView
+              android:id="@+id/tv_price"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:fontFamily="@font/roboto_medium"
+              android:text=""
+              android:textColor="@color/rosaFuerteOpaco"
+              android:textSize="18sp"
+              app:layout_constraintStart_toStartOf="@+id/tv_product_name"
+              app:layout_constraintTop_toBottomOf="@+id/tv_product_name" />
+
+          <TextView
+              android:id="@+id/tv_price_regular"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="10dp"
+              android:fontFamily="@font/roboto_medium"
+              android:text=""
+              android:textColor="@color/gray_btn_bg_pressed_color"
+              android:textSize="14sp"
+              android:visibility="gone"
+              app:layout_constraintBottom_toBottomOf="@+id/tv_price"
+              app:layout_constraintStart_toEndOf="@+id/tv_price"
+              app:layout_constraintTop_toTopOf="@+id/tv_price" />
+
+          <TextView
+              android:id="@+id/tv_description"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="30dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginEnd="30dp"
+              android:fontFamily="@font/roboto_regular"
+              android:text=""
+              android:textAlignment="textStart"
+              android:textSize="15sp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+          <com.google.android.material.button.MaterialButton
+              android:id="@+id/btn_mas"
+              style="@style/Widget.MaterialComponents.Button.TextButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Ver mas.."
+              android:textAlignment="textStart"
+              android:textAllCaps="false"
+              android:textSize="13sp"
+              app:layout_constraintStart_toStartOf="@+id/tv_description"
+              app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+          <com.google.android.material.button.MaterialButton
+              android:id="@+id/btn_guardar"
+              android:layout_width="match_parent"
+              android:layout_height="55dp"
+              android:layout_marginStart="30dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginEnd="30dp"
+              android:layout_marginBottom="20dp"
+              android:text="Comprar"
+              android:textAllCaps="false"
+              android:textSize="16sp"
+              app:cornerRadius="15dp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btn_mas" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/content_construccion"
+          android:layout_width="match_parent"
+          android:visibility="gone"
+          android:layout_height="match_parent">
+
+          <ImageView
+              android:id="@+id/imageView5"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:src="@drawable/ic_cosntruction"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <TextView
+              android:id="@+id/tv_construccion"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:fontFamily="@font/roboto_regular"
+              android:text="En mantenimiento"
+              android:textColor="@color/negro"
+              android:textSize="16sp"
+              app:layout_constraintEnd_toEndOf="@+id/imageView5"
+              app:layout_constraintStart_toStartOf="@+id/imageView5"
+              app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

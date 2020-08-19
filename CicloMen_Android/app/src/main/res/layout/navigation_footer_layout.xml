@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/palo"
+    android:layout_weight="0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:id="@+id/content_controler_linearlayout"
+        android:orientation="horizontal"
+        android:background="@color/palo"
+        android:layout_weight="0">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_previous_step"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:textAllCaps="false"
+            android:text="Atras"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            app:iconGravity="end"
+            android:contentDescription="@string/hard_coded"
+            android:layout_marginRight="10dp"
+            app:iconSize="38dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:textAllCaps="false"
+            android:text="@string/siguiente_btn_login"
+            app:icon="@drawable/ic_flecha_derecha_blanca"
+            android:textSize="16sp"
+            app:iconGravity="end"
+            app:iconSize="38dp"
+            app:cornerRadius="15dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="10dp"
+            app:backgroundTint="@color/colorPrimary"/>
+    </LinearLayout>
+</LinearLayout>

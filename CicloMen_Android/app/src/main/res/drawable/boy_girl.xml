@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_baby_boy"
+        android:top="50dp"
+        android:gravity="start" />
+    <item android:drawable="@drawable/ic_baby_girl"
+        android:gravity="end"
+        android:top="50dp"
+        android:start="50dp"/>
+</layer-list>

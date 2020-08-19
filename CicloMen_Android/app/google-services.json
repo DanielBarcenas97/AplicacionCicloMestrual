@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "712080156246",
+    "firebase_url": "https://mx-zublime-prediciclo.firebaseio.com",
+    "project_id": "mx-zublime-prediciclo",
+    "storage_bucket": "mx-zublime-prediciclo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712080156246:android:5b4fc8b62ecd2a3c7dbdf7",
+        "android_client_info": {
+          "package_name": "mx.zublime.prediciclo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712080156246-l47tvomrip0nh5strb5ftl8g18c3sl79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcSwRz_js0qqJG-okWvnr_fDWltJ31ptY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712080156246-l47tvomrip0nh5strb5ftl8g18c3sl79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712080156246:android:057c1b318c31cd987dbdf7",
+        "android_client_info": {
+          "package_name": "zublime.mx.prediciclo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712080156246-l47tvomrip0nh5strb5ftl8g18c3sl79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcSwRz_js0qqJG-okWvnr_fDWltJ31ptY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712080156246-l47tvomrip0nh5strb5ftl8g18c3sl79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vOE-ED-MnM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registro1 Periodo-->
+        <scene sceneID="Xma-Uu-YIw">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="vOE-ED-MnM" customClass="Registro1Periodo" customModule="PrediCiclo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Kr-vO-ctD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar_new_basic" translatesAutoresizingMaskIntoConstraints="NO" id="0zB-7Q-AoU">
+                                <rect key="frame" x="147" y="84" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="MnC-0l-5Ly"/>
+                                    <constraint firstAttribute="width" constant="120" id="sma-FK-rer"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icn-cd-LNS">
+                                <rect key="frame" x="45" y="808" width="50" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Atras">
+                                    <color key="titleColor" red="0.1159587279" green="0.12258534879999999" blue="0.133340925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAtras_click:" destination="Wpf-oq-bzl" eventType="touchUpInside" id="aVF-a4-1MX"/>
+                                    <action selector="btnAtras_click:" destination="aQF-A1-meo" eventType="touchUpInside" id="ceh-ah-sRw"/>
+                                    <action selector="btnAtras_click:" destination="vOE-ED-MnM" eventType="touchUpInside" id="mln-nc-BSQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zji-ge-9Ae">
+                                <rect key="frame" x="271" y="809" width="113" height="38"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.35686274509999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="fy9-pF-giJ"/>
+                                    <constraint firstAttribute="width" constant="113" id="i45-4F-c5Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                <state key="normal" title="Siguiente">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="aQF-A1-meo" kind="show" id="5qQ-8X-9tN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuándo comenzó tu último periodo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctl-ZG-CyS">
+                                <rect key="frame" x="40.5" y="234" width="333" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Cyx-lF-5qU"/>
+                                    <constraint firstAttribute="width" constant="333" id="O5L-sR-2DU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="23"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="CJR-x9-VGj">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                                <locale key="locale" localeIdentifier="es_MX"/>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.75674592068893609" blue="0.70603986482398351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Icn-cd-LNS" firstAttribute="leading" secondItem="gaL-kv-AZc" secondAttribute="leading" constant="45" id="14B-Ib-ib8"/>
+                            <constraint firstItem="gaL-kv-AZc" firstAttribute="bottom" secondItem="Icn-cd-LNS" secondAttribute="bottom" constant="15" id="K9Z-s9-7JT"/>
+                            <constraint firstItem="ctl-ZG-CyS" firstAttribute="centerX" secondItem="3Kr-vO-ctD" secondAttribute="centerX" id="KSW-Ni-VJK"/>
+                            <constraint firstItem="gaL-kv-AZc" firstAttribute="trailing" secondItem="Zji-ge-9Ae" secondAttribute="trailing" constant="30" id="KaN-y7-CY2"/>
+                            <constraint firstItem="0zB-7Q-AoU" firstAttribute="centerX" secondItem="3Kr-vO-ctD" secondAttribute="centerX" id="Mp1-Fb-1Ke"/>
+                            <constraint firstItem="CJR-x9-VGj" firstAttribute="centerX" secondItem="3Kr-vO-ctD" secondAttribute="centerX" id="bAt-Bw-t1k"/>
+                            <constraint firstItem="0zB-7Q-AoU" firstAttribute="top" secondItem="gaL-kv-AZc" secondAttribute="top" constant="40" id="esq-DE-GH5"/>
+                            <constraint firstItem="gaL-kv-AZc" firstAttribute="bottom" secondItem="Zji-ge-9Ae" secondAttribute="bottom" constant="15" id="l7y-n4-Zgi"/>
+                            <constraint firstItem="CJR-x9-VGj" firstAttribute="centerY" secondItem="3Kr-vO-ctD" secondAttribute="centerY" id="tkC-nM-4OE"/>
+                            <constraint firstItem="ctl-ZG-CyS" firstAttribute="top" secondItem="0zB-7Q-AoU" secondAttribute="bottom" constant="30" id="ydV-yU-sR8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gaL-kv-AZc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r1j-IT-off"/>
+                    <connections>
+                        <outlet property="pickerCalendario" destination="CJR-x9-VGj" id="pQI-2f-LwL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRI-Mm-ovj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-742.02898550724649" y="31.473214285714285"/>
+        </scene>
+        <!--Registro2 Periodo-->
+        <scene sceneID="BOv-R4-btd">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="aQF-A1-meo" customClass="Registro2Periodo" customModule="PrediCiclo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hp8-Ac-PqH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="NgM-f4-NSI">
+                                <rect key="frame" x="147" y="84" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="7Du-gE-Zyu"/>
+                                    <constraint firstAttribute="height" constant="120" id="nyU-Tg-m9B"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuántos dias dura tu periodo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0C-3f-Bfj">
+                                <rect key="frame" x="40.5" y="234" width="333" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="333" id="8Iv-4M-9L6"/>
+                                    <constraint firstAttribute="height" constant="63" id="ygU-Yy-UYX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="23"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaP-0K-fV9">
+                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muP-m5-jR7">
+                                <rect key="frame" x="45" y="813" width="47" height="34"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                <state key="normal" title="Atras">
+                                    <color key="titleColor" red="0.1159587279" green="0.12258534879999999" blue="0.133340925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAtras_click:" destination="aQF-A1-meo" eventType="touchUpInside" id="LFd-yD-Rre"/>
+                                    <action selector="btnAtras_click:" destination="Wpf-oq-bzl" eventType="touchUpInside" id="gys-hp-qI0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVI-ID-w51">
+                                <rect key="frame" x="269" y="809" width="115" height="38"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.35686274509999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="JYj-6E-Sk4"/>
+                                    <constraint firstAttribute="width" constant="115" id="dGq-ri-7u9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                <state key="normal" title="Siguiente">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Wpf-oq-bzl" kind="show" id="06m-G5-cAf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61533325954572182" green="0.98039215690000003" blue="0.91704965202316668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="muP-m5-jR7" firstAttribute="leading" secondItem="FdA-QM-WEA" secondAttribute="leading" constant="45" id="81g-p3-cje"/>
+                            <constraint firstItem="FdA-QM-WEA" firstAttribute="bottom" secondItem="muP-m5-jR7" secondAttribute="bottom" constant="15" id="Cmg-Dm-lpD"/>
+                            <constraint firstItem="Y0C-3f-Bfj" firstAttribute="top" secondItem="NgM-f4-NSI" secondAttribute="bottom" constant="30" id="JIX-RN-eAr"/>
+                            <constraint firstItem="xaP-0K-fV9" firstAttribute="centerX" secondItem="hp8-Ac-PqH" secondAttribute="centerX" id="Lri-QU-iGA"/>
+                            <constraint firstItem="Y0C-3f-Bfj" firstAttribute="centerX" secondItem="hp8-Ac-PqH" secondAttribute="centerX" id="QXX-o1-Dil"/>
+                            <constraint firstItem="xaP-0K-fV9" firstAttribute="centerY" secondItem="hp8-Ac-PqH" secondAttribute="centerY" id="Rsf-7E-vQm"/>
+                            <constraint firstItem="FdA-QM-WEA" firstAttribute="bottom" secondItem="HVI-ID-w51" secondAttribute="bottom" constant="15" id="TXz-eR-r47"/>
+                            <constraint firstItem="xaP-0K-fV9" firstAttribute="leading" secondItem="FdA-QM-WEA" secondAttribute="leading" id="aqt-i3-NcA"/>
+                            <constraint firstItem="FdA-QM-WEA" firstAttribute="trailing" secondItem="HVI-ID-w51" secondAttribute="trailing" constant="30" id="bi2-GX-plY"/>
+                            <constraint firstItem="FdA-QM-WEA" firstAttribute="trailing" secondItem="xaP-0K-fV9" secondAttribute="trailing" id="nFB-I2-pYC"/>
+                            <constraint firstItem="NgM-f4-NSI" firstAttribute="centerX" secondItem="hp8-Ac-PqH" secondAttribute="centerX" id="uFa-xN-Vca"/>
+                            <constraint firstItem="NgM-f4-NSI" firstAttribute="top" secondItem="FdA-QM-WEA" secondAttribute="top" constant="40" id="uSE-pn-ego"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FdA-QM-WEA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cvO-xb-Zs8"/>
+                    <connections>
+                        <outlet property="DiasPeriodoPicker" destination="xaP-0K-fV9" id="07z-hB-iha"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4j-uh-XhN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="30.803571428571427"/>
+        </scene>
+        <!--Registro3 Menstruacion-->
+        <scene sceneID="mJX-gm-sFU">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Wpf-oq-bzl" customClass="Registro3Menstruacion" customModule="PrediCiclo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H39-kO-oV4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuántos días dura tu menstruación?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9Y-1B-txS">
+                                <rect key="frame" x="40.5" y="244" width="333" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="ctW-WJ-bSb"/>
+                                    <constraint firstAttribute="width" constant="333" id="y1F-HI-a0O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="23"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Whu-2z-Mmf">
+                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="yGz-8j-wJE">
+                                <rect key="frame" x="142" y="84" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Oi4-vf-ERN"/>
+                                    <constraint firstAttribute="width" constant="130" id="nV2-8Z-dVN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypQ-u8-qte">
+                                <rect key="frame" x="45" y="815" width="47" height="34"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                <state key="normal" title="Atras">
+                                    <color key="titleColor" red="0.1159587279" green="0.12258534879999999" blue="0.133340925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAtras_click:" destination="Wpf-oq-bzl" eventType="touchUpInside" id="zgO-zB-3x3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knf-gf-VZB">
+                                <rect key="frame" x="269" y="809" width="115" height="38"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.35686274509999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="NYo-1R-AXs"/>
+                                    <constraint firstAttribute="height" constant="38" id="Vlq-1d-B7O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                <state key="normal" title="Siguiente">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ImK-LG-dzS" kind="show" id="8GR-dn-0be"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59715816342318584" green="1" blue="0.6963170622092143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yGz-8j-wJE" firstAttribute="top" secondItem="MSu-Kv-2bD" secondAttribute="top" constant="40" id="9Zr-ie-Vez"/>
+                            <constraint firstItem="MSu-Kv-2bD" firstAttribute="bottom" secondItem="Knf-gf-VZB" secondAttribute="bottom" constant="15" id="DJE-Lh-MA5"/>
+                            <constraint firstItem="MSu-Kv-2bD" firstAttribute="trailing" secondItem="Whu-2z-Mmf" secondAttribute="trailing" id="FV6-Po-qFw"/>
+                            <constraint firstItem="ypQ-u8-qte" firstAttribute="leading" secondItem="MSu-Kv-2bD" secondAttribute="leading" constant="45" id="R2O-rB-ZW7"/>
+                            <constraint firstItem="Whu-2z-Mmf" firstAttribute="centerX" secondItem="H39-kO-oV4" secondAttribute="centerX" id="XZ3-x0-lLK"/>
+                            <constraint firstItem="MSu-Kv-2bD" firstAttribute="bottom" secondItem="ypQ-u8-qte" secondAttribute="bottom" constant="13" id="ZPc-2M-hat"/>
+                            <constraint firstItem="A9Y-1B-txS" firstAttribute="top" secondItem="yGz-8j-wJE" secondAttribute="bottom" constant="30" id="ZQH-dL-aBM"/>
+                            <constraint firstItem="A9Y-1B-txS" firstAttribute="centerX" secondItem="H39-kO-oV4" secondAttribute="centerX" id="hF5-01-3Qb"/>
+                            <constraint firstItem="Whu-2z-Mmf" firstAttribute="leading" secondItem="MSu-Kv-2bD" secondAttribute="leading" id="ixL-od-Ih7"/>
+                            <constraint firstItem="yGz-8j-wJE" firstAttribute="centerX" secondItem="H39-kO-oV4" secondAttribute="centerX" id="lSF-7q-gFl"/>
+                            <constraint firstItem="MSu-Kv-2bD" firstAttribute="trailing" secondItem="Knf-gf-VZB" secondAttribute="trailing" constant="30" id="rm2-Zj-INJ"/>
+                            <constraint firstItem="Whu-2z-Mmf" firstAttribute="centerY" secondItem="H39-kO-oV4" secondAttribute="centerY" id="w7q-L1-4eJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MSu-Kv-2bD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nUU-Sr-QmB"/>
+                    <connections>
+                        <outlet property="menstruacionPicker" destination="Whu-2z-Mmf" id="qfk-8Q-3So"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVn-Lf-NPc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873.91304347826099" y="31.473214285714285"/>
+        </scene>
+        <!--Registro4 Fecha-->
+        <scene sceneID="zdK-3l-STe">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ImK-LG-dzS" customClass="Registro4Fecha" customModule="PrediCiclo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Syk-iy-l2n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birthday" translatesAutoresizingMaskIntoConstraints="NO" id="Ysg-48-l55">
+                                <rect key="frame" x="142" y="84" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="INz-Pr-GIE"/>
+                                    <constraint firstAttribute="height" constant="130" id="Yl3-kC-sxV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuál es tu fecha de nacimiento?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxd-wc-CKK">
+                                <rect key="frame" x="40.5" y="244" width="333" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="F1d-p7-MbF"/>
+                                    <constraint firstAttribute="width" constant="333" id="ti3-PV-EgM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="23"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oof-qQ-cux">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="602493948.28230095">
+                                    <!--2020-02-04 07:25:48 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="es_MX"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pm6-bX-g90">
+                                <rect key="frame" x="45" y="813" width="47" height="34"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                <state key="normal" title="Atras">
+                                    <color key="titleColor" red="0.1159587279" green="0.12258534879999999" blue="0.133340925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAtras_click:" destination="ImK-LG-dzS" eventType="touchUpInside" id="g4Q-yE-HV8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQE-WO-s4o">
+                                <rect key="frame" x="269" y="809" width="115" height="38"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.35686274509999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="Ed8-YC-XfU"/>
+                                    <constraint firstAttribute="height" constant="38" id="U4U-4d-fGk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                <state key="normal" title="Siguiente">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSiguiente_click:" destination="ImK-LG-dzS" eventType="touchUpInside" id="UQm-Ds-thy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.91432060518102443" blue="0.44000140272378918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ysg-48-l55" firstAttribute="centerX" secondItem="Syk-iy-l2n" secondAttribute="centerX" id="1UK-nY-WMS"/>
+                            <constraint firstItem="HKR-aW-bnn" firstAttribute="bottom" secondItem="RQE-WO-s4o" secondAttribute="bottom" constant="15" id="3lO-pH-oZK"/>
+                            <constraint firstItem="Oof-qQ-cux" firstAttribute="centerX" secondItem="Syk-iy-l2n" secondAttribute="centerX" id="6as-sa-oo4"/>
+                            <constraint firstItem="Oof-qQ-cux" firstAttribute="centerY" secondItem="Syk-iy-l2n" secondAttribute="centerY" id="IiV-rv-Oms"/>
+                            <constraint firstItem="HKR-aW-bnn" firstAttribute="trailing" secondItem="RQE-WO-s4o" secondAttribute="trailing" constant="30" id="crt-aE-5Pq"/>
+                            <constraint firstItem="Cxd-wc-CKK" firstAttribute="centerX" secondItem="Syk-iy-l2n" secondAttribute="centerX" id="he0-EL-Mcs"/>
+                            <constraint firstItem="pm6-bX-g90" firstAttribute="leading" secondItem="HKR-aW-bnn" secondAttribute="leading" constant="45" id="jE5-LA-YcL"/>
+                            <constraint firstItem="Cxd-wc-CKK" firstAttribute="top" secondItem="Ysg-48-l55" secondAttribute="bottom" constant="30" id="sFL-kx-Glv"/>
+                            <constraint firstItem="HKR-aW-bnn" firstAttribute="bottom" secondItem="pm6-bX-g90" secondAttribute="bottom" constant="15" id="u3O-U3-O8C"/>
+                            <constraint firstItem="Ysg-48-l55" firstAttribute="top" secondItem="HKR-aW-bnn" secondAttribute="top" constant="40" id="wII-e6-U4T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HKR-aW-bnn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W8N-cg-jAA"/>
+                    <connections>
+                        <outlet property="cumpleView" destination="Oof-qQ-cux" id="4pm-B7-ase"/>
+                        <segue destination="5sT-KD-uM5" kind="presentation" identifier="gotoMain" id="fBy-hP-JRK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10m-Bh-s2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1630.4347826086957" y="27.455357142857142"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="HtK-gY-ewW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="5sT-KD-uM5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PrX-Yv-wlx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUb-6f-aXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="birthday" width="512" height="512"/>
+        <image name="calendar_new_basic" width="512" height="512"/>
+        <image name="clock" width="512" height="512"/>
+    </resources>
+</document>

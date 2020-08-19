@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.pedido.datospago.SeleccionFormaPagoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btn_back_medio_pago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/selecciona_tu_forma_de_pago"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_back_medio_pago"
+            app:layout_constraintStart_toEndOf="@+id/btn_back_medio_pago"
+            app:layout_constraintTop_toTopOf="@+id/btn_back_medio_pago" />
+
+        <TextView
+            android:id="@+id/advertencia_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/puedes_guardar_como_m_ximo_dos_tarjetas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_add_card"/>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_animate_card"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="106dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="106dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="animatecard.json"
+            app:lottie_loop="true" />
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:orientation="vertical"
+            android:id="@+id/chipGroup"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:singleLine="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lottie_animate_card"
+            app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_tarjeta_1"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="XXXX-XXXX-XXXX-1524"
+                    android:visibility="gone"
+                    app:chipBackgroundColor="@color/chip_list"
+                    app:closeIcon="@drawable/btn_close_chip"
+                    app:closeIconStartPadding="10dp"
+                    app:closeIconVisible="true"
+                    app:iconStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_tarjeta_2"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="XXXX-XXXX-XXXX-1524"
+                    android:visibility="gone"
+                    app:chipBackgroundColor="@color/chip_list"
+                    app:closeIcon="@drawable/btn_close_chip"
+                    app:closeIconStartPadding="10dp"
+                    app:closeIconVisible="true"
+                    app:iconStartPadding="10dp" />
+
+
+
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_add_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="#9EFFA9"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/chipGroup"
+            app:srcCompat="@drawable/ic_add_white"
+            app:tint="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_continuar_medio_pago"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="50dp"
+            android:enabled="false"
+            android:text="Continuar"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/advertencia_textview" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="298dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tarjetas_aceptadas_textview"
+            android:text="@string/tarjetas_aceptadas"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_continuar_medio_pago"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:id="@+id/icon_visa"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_visa_black"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintEnd_toStartOf="@id/icon_mastercard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tarjetas_aceptadas_textview" />
+
+        <ImageView
+            android:id="@+id/icon_mastercard"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_mastercard_black"
+            app:layout_constraintEnd_toStartOf="@id/icon_american"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@id/icon_visa"
+            app:layout_constraintBottom_toBottomOf="@id/icon_visa"
+            app:layout_constraintStart_toEndOf="@id/icon_visa" />
+
+        <ImageView
+            android:id="@+id/icon_american"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_american_black"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@id/icon_visa"
+            app:layout_constraintBottom_toBottomOf="@id/icon_visa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/icon_mastercard" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

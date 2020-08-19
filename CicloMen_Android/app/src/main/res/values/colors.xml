@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DF7C73</color>
+    <color name="colorPrimaryDark">#DF7C73</color>
+    <color name="colorAccent">#B28DFF</color>
+    <!--  colores personalizados de la app de prediciclo  -->
+    <color name="rosaInferior">#FC7D75</color>
+    <color name="rosaSuperior">#FFBCB8</color>
+    <color name="palo">#F5C6C2</color>
+    <color name="cielo">#B0DADC</color>
+    <color name="mint">#A9D1AD</color>
+    <color name="mint_dark">#5dba67</color>
+    <color name="mint_alt">#B9F6CA</color>
+    <color name="lila">#C3B1CE</color>
+    <color name="crema">#FCDA9D</color>
+    <color name="beige">#EDE1D4</color>
+    <color name="platino">#D3D9CC</color>
+    <color name="arena">#CABFB1</color>
+    <color name="negro">#454752</color>
+    <!--  Fin de colores de prediciclo  -->
+    <!-- colores que utiliza la App de flo -->
+    <color name="rosaFuerteOpaco">#D95E64</color>
+    <color name="cremaClaro">#F5E3DD</color>
+    <color name="rosaPastelFuerte">#EE5B74</color>
+    <color name="grisMedio">#EAEAEA</color>
+    <color name="grisClaro">#F9F9F9</color>
+    <!-- Fin de colores de la app flo-->
+    <!-- variación de colores rosa -->
+    <color name="rosaFuerteOne">#FE5B91</color>
+    <color name="rosaFuerteTwo">#FF818F</color>
+    <color name="rosaFuerteThree">#FF818F</color>
+    <color name="rosaClaroOne">#FAC4CF</color>
+    <color name="rosaClaroTwo">#F9F9F9</color>
+    <color name="white">#FFFFFF</color>
+    <!--calendario-->
+    <color name="azulFuerte">#0D47a1</color>
+    <color name="azulMedio">#2196F3</color>
+    <!--steps-->
+    <color name="color_step_1">#F5C6C2</color>
+    <color name="color_step_2">#B5F7E2</color>
+    <color name="color_step_3">#A9D1AD</color>
+    <color name="color_step_4">#FCDA9D</color>
+
+</resources>

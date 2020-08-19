@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">PrediCiclo método natural</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_inicio_nav">Inicio</string>
+    <string name="string_mas_nav">Más</string>
+    <string name="string_comprar_nav">Tienda</string>
+    <string name="calendario_menstrual">Prediciclo</string>
+    <string name="hard_coded">Esta es una despcripción corta de string para los contenDescriptions de los widgets android</string>
+    <!--Strings del login-->
+    <string name="inicia_sesion_textview">Inicia sesión</string>
+    <string name="email_edittext">Correo electrónico</string>
+    <string name="password_edittext">Contraseña</string>
+    <string name="siguiente_btn_login">Siguiente</string>
+    <string name="registrar_text">Regístrate</string>
+    <string name="registrar_soy_nuvea">¿Eres nueva en prediclico?,\u0020</string>
+    <string name="registro_title">Regístrate</string>
+    <string name="cuenta_text">¿Ya tienes una cuenta?,\u0020</string>
+    <string name="cuenta_iniciar">Inicia sesión</string>
+    <!--Strings de autenticación de cadenas de texto-->
+    <string name="correo_digits">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM-_.@1234567890</string>
+    <string name="email_invalido">Correo inválido</string>
+    <string name="campo_obligatorio">Campo obligatorio *</string>
+    <string name="pass_lengh_min">La contraseña debe ser mínimo de 6 caracteres</string>
+    <string name="password_digits">1234567890qwertyuiopasdfghjklzxcvbnmñQWERTYUIOPASDFGHJKLZXCVBNMÑ-_.@*!@#$%*?</string>
+    <string name="limpiar_calendario">Limpiar calendario</string>
+    <string name="pregunta_estas_segura">¿Estás segura?</string>
+    <string name="descripcion_pregunta_borrar">Esto borrara todos tus datos de tu calendario</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="selecciona_periodo">Ingresa el día que inició tu periodo</string>
+    <string name="selecciona_periodo_ciclo_invalido">Tu ciclo ha sido inválido, tendremos que reiniciarlo. Por favor ingresa el día que inició tu nuevo ciclo.</string>
+    <string name="accion_requerida">Accion requerida</string>
+    <string name="guardar">Guardar</string>
+    <string name="continuar">Continuar</string>
+    <!-- Strings de la seccion de configuracion-->
+    <string name="configuracion_step_1_title">¿Cuándo comenzó tu último\nperiodo?</string>
+    <string name="configuracion_step_2_title">¿Cuántos días dura tu periodo?</string>
+    <string name="configuration_step_3_title">¿Cuántos días dura tu menstruación?</string>
+    <string name="configuration_step_4_title">¿Cuál es tu fecha de\nnacimiento?</string>
+    <string name="configuracion_alias">Apodo</string>
+    <string name="configuracion_periodo">Duración de tu periodo</string>
+    <string name="configuracion_periodo_editar">¿Cuántos días dura tu periodo?</string>
+    <string name="configuracion_ciclo">Duración de tu menstruación</string>
+    <string name="configuracion_ciclo_editar">¿Cuántos días dura tu menstruación?</string>
+    <string name="configuracion_nacimiento">Fecha de nacimiento</string>
+    <string name="configuration_guardar">Guardar</string>
+    <string name="pregunta_resultado">¿Cuál es el resultado de tu prueba?</string>
+    <string name="negativo">Negativo</string>
+    <string name="positivo">Positivo</string>
+    <string name="confirmar">Confirmar</string>
+
+    <string name="short_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, \n
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="invalido">Inválido</string>
+    <string name="posibilidad_de_embarazo_de_boy">Posibilidad de embarazo\nde niño</string>
+    <string name="posibilidad_de_embarazo_de_girl">Posibilidad de embarazo\nde niña</string>
+    <string name="solicitud_de_prueba_de_fertilidad">Solicitud de prueba\nde fertilidad</string>
+    <string name="menstruacion">Menstruación</string>
+    <string name="pico_de_fertilidad_mayor_probabilidad_de_embarazo">Pico de fertilidad (Mayor probabilidad de embarazo)</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="selecciona_tu_forma_de_pago">Selecciona tu forma de pago</string>
+
+    <string name="forgot_string"><u>¿Olvidaste tu contraseña?</u></string>
+    <string name="digits_alfanumerico"><![CDATA[qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890@#$%&*_+]]></string>
+
+    <string name="successful">Gracias por tu compra, los datos de tu envió serán enviados a tu correo electrónico</string>
+    <string name="error">Tu compra no fué autorizada, por favor verifica que los datos de pago sean correctos e intentalo nuevamente</string>
+    <string name="error_general">Ocurrió un error, intentelo más tarde</string>
+
+    <string name="text_terminos">Términos y condiciones</string>
+    <string name="text_politicas">Política de privacidad</string>
+    <string name="text_help">Ayuda</string>
+
+    <string name="puedes_guardar_como_m_ximo_dos_tarjetas">Puedes guardar como máximo dos tarjetas</string>
+    <string name="tarjetas_aceptadas">Tarjetas aceptadas</string>
+
+</resources>

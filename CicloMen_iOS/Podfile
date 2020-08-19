@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+
+target 'PrediCiclo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PrediCiclo
+	pod 'IQKeyboardManager','6.5.4'
+  pod 'lottie-ios'
+	pod "SkeletonView"
+	pod 'PasswordTextField','1.2.0'
+	pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
+	pod 'Alamofire', '4.7.3'
+	pod 'AlamofireObjectMapper', '~> 5.2'
+	pod 'ObjectMapper', '~> 3.4'
+	pod 'SwiftyJSON','4.2.0'
+	pod 'NVActivityIndicatorView','4.4.0'
+  pod 'JTAppleCalendar', :git => 'https://github.com/patchthecode/JTAppleCalendar.git', :branch => 'master'
+  pod 'Toast-Swift', '~> 5.0.0'
+	
+
+  target 'PrediCicloTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

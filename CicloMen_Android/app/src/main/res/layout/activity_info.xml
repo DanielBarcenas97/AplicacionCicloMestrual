@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.InfoActivity">
+
+    <ImageView
+        android:id="@+id/boy_imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/boy_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/close_imageview"
+        app:srcCompat="@drawable/ic_baby_boy" />
+
+    <ImageView
+        android:id="@+id/girl_imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/boy_imageview"
+        app:layout_constraintStart_toStartOf="@+id/boy_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/boy_imageview"
+        app:srcCompat="@drawable/ic_baby_girl" />
+
+    <ImageView
+        android:id="@+id/test_imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/girl_imageview"
+        app:layout_constraintStart_toStartOf="@+id/girl_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/girl_imageview"
+        app:srcCompat="@drawable/ic_pregnancy_test" />
+
+    <ImageView
+        android:id="@+id/menstruacion_imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/test_imageview"
+        app:layout_constraintStart_toStartOf="@+id/test_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/test_imageview"
+        app:srcCompat="@drawable/ic_raindrop_close_up" />
+
+    <ImageView
+        android:id="@+id/pico_imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/menstruacion_imageview"
+        app:layout_constraintStart_toStartOf="@+id/menstruacion_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/menstruacion_imageview"
+        app:srcCompat="@drawable/ic_pico" />
+
+    <ImageView
+        android:id="@+id/close_imageview"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close_black_" />
+
+    <TextView
+        android:id="@+id/boy_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@string/posibilidad_de_embarazo_de_boy"
+        app:layout_constraintBottom_toBottomOf="@+id/boy_imageview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/boy_imageview"
+        app:layout_constraintTop_toTopOf="@+id/boy_imageview" />
+
+    <TextView
+        android:id="@+id/girl_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/posibilidad_de_embarazo_de_girl"
+        app:layout_constraintBottom_toBottomOf="@+id/girl_imageview"
+        app:layout_constraintEnd_toEndOf="@+id/boy_textview"
+        app:layout_constraintStart_toStartOf="@+id/boy_textview"
+        app:layout_constraintTop_toTopOf="@+id/girl_imageview" />
+
+    <TextView
+        android:id="@+id/test_textview"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:text="@string/solicitud_de_prueba_de_fertilidad"
+        app:layout_constraintBottom_toBottomOf="@+id/test_imageview"
+        app:layout_constraintStart_toStartOf="@+id/girl_textview"
+        app:layout_constraintTop_toTopOf="@+id/test_imageview"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/menstruacion_textview"
+        android:layout_width="92dp"
+        android:layout_height="18dp"
+        android:text="@string/menstruacion"
+        app:layout_constraintBottom_toBottomOf="@+id/menstruacion_imageview"
+        app:layout_constraintStart_toStartOf="@+id/test_textview"
+        app:layout_constraintTop_toTopOf="@+id/menstruacion_imageview" />
+
+    <TextView
+        android:id="@+id/pico_textview"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pico_de_fertilidad_mayor_probabilidad_de_embarazo"
+        app:layout_constraintBottom_toBottomOf="@+id/pico_imageview"
+        app:layout_constraintStart_toStartOf="@+id/menstruacion_textview"
+        app:layout_constraintTop_toTopOf="@+id/pico_imageview" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cerrar_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/cerrar"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/positivo_textview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
